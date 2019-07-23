@@ -7,7 +7,8 @@ import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
 import { PeopleComponent } from './people/people.component';
 import { MoviesComponent } from './movies/movies.component';
 import { PlanetsComponent } from './planets/planets.component';
-import { HomeComponent } from './home/home.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,12 +17,12 @@ import { HomeComponent } from './home/home.component';
     PeopleComponent,
     MoviesComponent,
     PlanetsComponent,
-    HomeComponent
   ],
   imports: [
     BrowserModule,
     NgbDropdownModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

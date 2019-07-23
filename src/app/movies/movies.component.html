@@ -1,1 +1,5 @@
-<p>movies works!</p>
+<div>
+    <ul *ngIf="films.results">
+        <li *ngFor="let film of films.results">{{film.title}}</li>
+      </ul>
+</div>

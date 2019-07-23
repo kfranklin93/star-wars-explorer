@@ -1,11 +1,22 @@
 
 <!--The content below is only a placeholder and can be replaced.-->
-<div lass="container-fluid">
+<div class="container-fluid">
   <h1>
     Welcome to {{ title }}!
   </h1>
 
-
+  <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Dropdown Navigation</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button routerLink="/people" ngbDropdownItem>People</button>
+            <button routerLink="/movies" ngbDropdownItem>Movies</button>
+            <button routerLink="/planets" ngbDropdownItem>Planets</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <router-outlet></router-outlet>
 
 </div>
