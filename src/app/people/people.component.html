@@ -1,1 +1,5 @@
-<p>people works!</p>
+<div>
+    <ul *ngIf="people.results">
+        <li *ngFor="let person of people.results">{{person.name}}</li>
+      </ul>
+</div>

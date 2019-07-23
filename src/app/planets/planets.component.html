@@ -1,1 +1,5 @@
-<p>planets works!</p>
+<div>
+    <ul *ngIf="planet.results">
+        <li *ngFor="let planet of planets.results">{{planet.name}}</li>
+      </ul>
+</div>
