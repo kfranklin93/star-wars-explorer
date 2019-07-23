@@ -4,11 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
+import { PeopleComponent } from './people/people.component';
+import { MoviesComponent } from './movies/movies.component';
+import { PlanetsComponent } from './planets/planets.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PeopleComponent,
+    MoviesComponent,
+    PlanetsComponent
   ],
   imports: [
     BrowserModule,
