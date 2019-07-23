@@ -7,6 +7,7 @@ import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
 import { PeopleComponent } from './people/people.component';
 import { MoviesComponent } from './movies/movies.component';
 import { PlanetsComponent } from './planets/planets.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { PlanetsComponent } from './planets/planets.component';
     AppComponent,
     PeopleComponent,
     MoviesComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
