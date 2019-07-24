@@ -19,6 +19,10 @@ export class MoviesComponent implements OnInit {
     });
     console.log(this.filmDetails);
   }
+  // Make the unordered list elements clickable by turning them into buttons,
+  // upon clicking a button have a function in the component that finds the object
+  // within the array and display some of the notable attributes in a modal
+
   ngOnInit() {
     this.films = this.moviesService
       .getFilms()
