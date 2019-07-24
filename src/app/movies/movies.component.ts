@@ -8,17 +8,23 @@ import { Observable } from 'rxjs';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-
-  constructor(private moviesService: MoviesService) { }
+  constructor(private moviesService: MoviesService) {}
 
   films: any;
+  filmDetails: any;
 
+  displayMovieDetails(movieName: string) {
+    this.filmDetails = this.films.results.find(element => {
+      return element.title === movieName;
+    });
+    console.log(this.filmDetails);
+  }
   ngOnInit() {
-    this.films = this.moviesService.getFilms().subscribe((data) => this.films = { ...data });
-
+    this.films = this.moviesService
+      .getFilms()
+      .subscribe(data => (this.films = { ...data }));
   }
   // ngOnDestroy(){
 
   // }
-
 }

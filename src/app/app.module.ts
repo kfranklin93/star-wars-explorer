@@ -9,6 +9,9 @@ import { MoviesComponent } from './movies/movies.component';
 import { PlanetsComponent } from './planets/planets.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { SpeciesComponent } from './species/species.component';
+import { StarshipsComponent } from './starships/starships.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     PeopleComponent,
     MoviesComponent,
     PlanetsComponent,
+    SpeciesComponent,
+    StarshipsComponent,
+    VehiclesComponent,
   ],
   imports: [
     BrowserModule,
