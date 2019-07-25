@@ -13,11 +13,9 @@ export class MoviesComponent implements OnInit {
   films: any;
   filmDetails: any;
 
-  displayMovieDetails(movieName: string) {
-    this.filmDetails = this.films.results.find(element => {
-      return element.title === movieName;
-    });
-    console.log(this.filmDetails);
+  displayMovieDetails(movie: any) {
+
+    // console.log(this.filmDetails);
   }
   // Make the unordered list elements clickable by turning them into buttons,
   // upon clicking a button have a function in the component that finds the object

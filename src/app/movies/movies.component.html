@@ -1,6 +1,6 @@
 <div>
     <ul *ngIf="films.results">
-        <li *ngFor="let film of films.results"><button (click)=displayMovieDetails(film.title)>{{film.title}}</button></li>
+        <li *ngFor="let film of films.results"><button (click)=displayMovieDetails(film)>{{film.title}}</button></li>
       </ul>
 </div>
 
