@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from './movies.service';
 import { Observable } from 'rxjs';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalContentComponent } from '../modal-content/modal-content.component';
+
+
 
 @Component({
   selector: 'app-movies',
@@ -8,13 +12,16 @@ import { Observable } from 'rxjs';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  constructor(private moviesService: MoviesService) {}
+  constructor(private moviesService: MoviesService, private modalService: NgbModal) {}
 
   films: any;
   filmDetails: any;
 
-  displayMovieDetails(movie: any) {
 
+  displayMovieDetails(movie: any) {
+    this.filmDetails = movie;
+    const modalRef = this.modalService.open(ModalContentComponent, { scrollable: true});
+    modalRef.componentInstance.data = this.filmDetails;
     // console.log(this.filmDetails);
   }
   // Make the unordered list elements clickable by turning them into buttons,

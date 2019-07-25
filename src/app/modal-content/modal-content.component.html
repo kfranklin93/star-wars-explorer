@@ -1,1 +1,12 @@
-<p>modal-content works!</p>
+<div>
+<div *ngIf="data.title">Title: {{ data.title }}</div>
+<div *ngIf="data.name">Name: {{ data.name }}</div>
+<div *ngIf="data.producer"> Producer(s): {{ data.producer }}</div>
+<div *ngIf="data.population"> Population: {{ data.population }}</div>
+<div *ngIf="data.opening_crawl"> Opening Crawl: {{ data.opening_crawl }}</div>
+<div *ngIf="data.characters"> Characters: {{ data.characters }}</div>
+<div *ngIf="data.classification"> Classification: {{ data.classification }}</div>
+<!-- <div *ngIf="data.population"> Population :{{ data.population }}</div>
+<div *ngIf="data.population"> Population :{{ data.population }}</div> -->
+
+</div>

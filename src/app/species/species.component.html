@@ -1,5 +1,5 @@
 <div>
     <ul *ngIf="species.results">
-        <li *ngFor="let species of species.results">{{species.name}}</li>
+        <li *ngFor="let species of species.results"><button (click)=displaySpeciesDetails(species)>{{species.name}}</button></li>
       </ul>
 </div>

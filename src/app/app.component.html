@@ -10,10 +10,14 @@
         <div ngbDropdown class="d-inline-block">
           <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Dropdown Navigation</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button routerLink="/home" ngbDropdownItem>Home</button>
             <button routerLink="/people" ngbDropdownItem>People</button>
             <button routerLink="/movies" ngbDropdownItem>Movies</button>
             <button routerLink="/planets" ngbDropdownItem>Planets</button>
             <button routerLink="/species" ngbDropdownItem>Species</button>
+            <button routerLink="/starships" ngbDropdownItem>Starships</button>
+            <button routerLink="/vehicles" ngbDropdownItem>Vehicles</button>
+
 
           </div>
         </div>
@@ -21,6 +25,9 @@
     </div>
 <router-outlet></router-outlet>
 
+<p id="start">A short time ago in a browser very, very close&hellip;</p>
+
+<h1>STAR WARS<sub>titles in CSS3</sub></h1>
 </div>
 
 
