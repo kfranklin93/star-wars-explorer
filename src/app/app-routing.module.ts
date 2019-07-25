@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PlanetsComponent } from './planets/planets.component';
 import { MoviesComponent } from './movies/movies.component';
 import { PeopleComponent } from './people/people.component';
+import { SpeciesComponent } from './species/species.component';
 
 const routes: Routes = [
 
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'planets',
     component: PlanetsComponent
+  },
+  {
+    path: 'species',
+    component: SpeciesComponent
   }
 ];
 

@@ -1,1 +1,5 @@
-<p>species works!</p>
+<div>
+    <ul *ngIf="species.results">
+        <li *ngFor="let species of species.results">{{species.name}}</li>
+      </ul>
+</div>
