@@ -1,26 +1,32 @@
 <div>
-  <div id="inside" *ngIf="data.title">Title: {{ data.title }}</div>
-  <div id="inside" *ngIf="data.name">Name: {{ data.name }}</div>
-  <div id="inside" *ngIf="data.producer">Producer(s): {{ data.producer }}</div>
-  <div id="inside" *ngIf="data.population">
+  <div  *ngIf="data.title">Title: {{ data.title }}</div>
+  <div  *ngIf="data.name">Name: {{ data.name }}</div>
+  <div  *ngIf="data.model">Model: {{ data.model }}</div>
+  <div  *ngIf="data.manufacturer">Manufacturer: {{ data.manufacturer }}</div>
+  <div  *ngIf="data.crew">Crew: {{ data.crew }}</div>
+  <div  *ngIf="data.passengers">Passengers: {{ data.passengers }}</div>
+  <div  *ngIf="data.cargo_capacity">Cargo Capacity: {{ data.cargo_capacity}}</div>
+  <div  *ngIf="data.consumables">Food Supply: {{ data.consumables }}</div>
+  <div  *ngIf="data.producer">Producer(s): {{ data.producer }}</div>
+  <div  *ngIf="data.population">
     Population: {{ data.population }}
   </div>
-  <div id="inside" *ngIf="data.opening_crawl">
+  <div  *ngIf="data.opening_crawl">
     Opening Crawl: {{ data.opening_crawl }}
   </div>
-  <div id="inside" *ngIf="data.characters">
+  <div  *ngIf="data.characters">
     Characters: {{ data.characters }}
   </div>
-  <div id="inside" *ngIf="data.classification">
+  <div  *ngIf="data.classification">
     Classification: {{ data.classification }}
   </div>
-  <div id="inside" *ngIf="data.designation">
+  <div  *ngIf="data.designation">
     Designation: {{ data.designation }}
   </div>
-  <div id="inside" *ngIf="data.average_height">
+  <div  *ngIf="data.average_height">
     Average Height: {{ data.average_height }}
   </div>
-  <div id="inside" *ngIf="data.homeworld">Home World: {{ data.homeworld }}</div>
-  <div id="inside" *ngIf="data.films">Films: {{ data.films }}</div>
-  <div id="inside" *ngIf="data.people">Films: {{ data.people }}</div>
+  <div  *ngIf="data.homeworld">Home World: {{ data.homeworld }}</div>
+  <div  *ngIf="data.films">Films: {{ data.films }}</div>
+  <div  *ngIf="data.people">Films: {{ data.people }}</div>
 </div>
