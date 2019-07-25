@@ -1,37 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { StarshipsService } from "./starships.service";
+import { ModalContentComponent } from "../modal-content/modal-content.component";
 
 @Component({
-  selector: 'app-starships',
-  templateUrl: './starships.component.html',
-  styleUrls: ['./starships.component.css']
+  selector: "app-starships",
+  templateUrl: "./starships.component.html",
+  styleUrls: ["./starships.component.css"]
 })
 export class StarshipsComponent implements OnInit {
+  constructor(
+    private starshipsService: StarshipsService,
+    private modalService: NgbModal
+  ) {}
 
-  constructor() { }
+  starships: any;
+  starshipDetails: any;
 
-  ngOnInit() {
-    // Sets the number of stars we wish to display
-const numStars = 100;
-
-// For every star we want to display
-for (let i = 0; i < numStars; i++) {
-  const star = document.createElement('div');
-  star.className = 'star';
-  const xy = getRandomPosition();
-  star.style.top = xy[0] + 'px';
-  star.style.left = xy[1] + 'px';
-  document.body.append(star);
-}
-
-// Gets random x, y values based on the size of the container
-function getRandomPosition() {
-  const y = window.innerWidth;
-  const x = window.innerHeight;
-  const randomX = Math.floor(Math.random() * x);
-  const randomY = Math.floor(Math.random() * y);
-  return [randomX, randomY];
-}
+  displayStarshipDetails(movie: any) {
+    this.starshipDetails = movie;
+    const modalRef = this.modalService.open(ModalContentComponent, {
+      scrollable: true
+    });
+    modalRef.componentInstance.data = this.starshipDetails;
 
   }
 
+
+  ngOnInit() {
+    this.starships = this.starshipsService
+      .getStarships()
+      .subscribe(data => (this.starships = { ...data }));
+  }
+  // ngOnDestroy(){
+
+  // }
 }

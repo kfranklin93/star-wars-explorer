@@ -1,1 +1,9 @@
-<p>starships works!</p>
+<div>
+  <ul *ngIf="starships.results">
+    <li *ngFor="let starship of starships.results">
+      <button (click)="displayStarshipDetails(starship)">
+        {{ starship.name }}
+      </button>
+    </li>
+  </ul>
+</div>
