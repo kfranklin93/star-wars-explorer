@@ -1,6 +1,11 @@
-div{
+div {
+  padding: 5px;
   display: block;
-  height: 200px;
+  height: 75px;
   overflow-y: auto;
-  font-size: auto
 }
+/* div#inside{
+  display: block;
+height: 45px;
+overflow-y: auto;
+} */

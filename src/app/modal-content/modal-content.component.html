@@ -1,12 +1,26 @@
 <div>
-<div *ngIf="data.title">Title: {{ data.title }}</div>
-<div *ngIf="data.name">Name: {{ data.name }}</div>
-<div *ngIf="data.producer"> Producer(s): {{ data.producer }}</div>
-<div *ngIf="data.population"> Population: {{ data.population }}</div>
-<div *ngIf="data.opening_crawl"> Opening Crawl: {{ data.opening_crawl }}</div>
-<div *ngIf="data.characters"> Characters: {{ data.characters }}</div>
-<div *ngIf="data.classification"> Classification: {{ data.classification }}</div>
-<!-- <div *ngIf="data.population"> Population :{{ data.population }}</div>
-<div *ngIf="data.population"> Population :{{ data.population }}</div> -->
-
+  <div id="inside" *ngIf="data.title">Title: {{ data.title }}</div>
+  <div id="inside" *ngIf="data.name">Name: {{ data.name }}</div>
+  <div id="inside" *ngIf="data.producer">Producer(s): {{ data.producer }}</div>
+  <div id="inside" *ngIf="data.population">
+    Population: {{ data.population }}
+  </div>
+  <div id="inside" *ngIf="data.opening_crawl">
+    Opening Crawl: {{ data.opening_crawl }}
+  </div>
+  <div id="inside" *ngIf="data.characters">
+    Characters: {{ data.characters }}
+  </div>
+  <div id="inside" *ngIf="data.classification">
+    Classification: {{ data.classification }}
+  </div>
+  <div id="inside" *ngIf="data.designation">
+    Designation: {{ data.designation }}
+  </div>
+  <div id="inside" *ngIf="data.average_height">
+    Average Height: {{ data.average_height }}
+  </div>
+  <div id="inside" *ngIf="data.homeworld">Home World: {{ data.homeworld }}</div>
+  <div id="inside" *ngIf="data.films">Films: {{ data.films }}</div>
+  <div id="inside" *ngIf="data.people">Films: {{ data.people }}</div>
 </div>
