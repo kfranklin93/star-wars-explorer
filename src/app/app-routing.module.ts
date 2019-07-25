@@ -6,13 +6,8 @@ import { PeopleComponent } from './people/people.component';
 import { SpeciesComponent } from './species/species.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { StarshipsComponent } from './starships/starships.component';
-import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent
-  },
   {
     path: 'people',
     component: PeopleComponent
