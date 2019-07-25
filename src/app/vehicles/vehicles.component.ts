@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { VehiclesService } from './vehicles.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalContentComponent } from '../modal-content/modal-content.component';
 
 @Component({
   selector: 'app-vehicles',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VehiclesComponent implements OnInit {
 
-  constructor() { }
+    constructor(
+      private vehiclesService: VehiclesService,
+      private modalService: NgbModal
+    ) {}
 
-  ngOnInit() {
+    vehicles: any;
+    vehicleDetails: any;
+
+    displayVehicleDetails(vehicle: any) {
+      this.vehicleDetails = vehicle;
+      const modalRef = this.modalService.open(ModalContentComponent, {
+        scrollable: true
+      });
+      modalRef.componentInstance.data = this.vehicleDetails;
+
+    }
+
+
+    ngOnInit() {
+      this.vehicles = this.vehiclesService
+        .getVehicles()
+        .subscribe(data => (this.vehicles = { ...data }));
+    }
+
   }
-
-}

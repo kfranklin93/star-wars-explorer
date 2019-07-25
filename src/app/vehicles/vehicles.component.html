@@ -1,1 +1,9 @@
-<p>vehicles works!</p>
+<div>
+    <ul *ngIf="vehicles.results">
+      <li *ngFor="let vehicle of vehicles.results">
+        <button (click)="displayVehicleDetails(vehicle)">
+          {{ vehicle.name }}
+        </button>
+      </li>
+    </ul>
+  </div>
