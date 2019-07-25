@@ -8,7 +8,7 @@ body, html
   height: 100%;
   font-family: "Droid Sans", arial, verdana, sans-serif;
 	font-weight: 700;
-	background-color: #000;
+  background-color: #000;
 	overflow: hidden;
 }
 
@@ -51,6 +51,7 @@ body, html
   margin: auto;
   animation: logo 5s ease-out 4s;
   opacity: 0;
+  animation-iteration-count: 1;
 }
 .logo svg {
   width: inherit;
@@ -76,6 +77,26 @@ body, html
 p {
   color:white;
 }
+a.navbar-brand{
+  color: yellow;
+}
+button.dropdown-item{
+  display: inline-block;
+  color: yellow;
+}
+button {
+  display:inline-flex;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+  button:hover {
+    background-color: yellow;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.548), 0 17px 50px 0 rgba(255, 255, 255, 0.699);
+  }
+
 
 /* Set the font, lean the board, position it */
 #board {
@@ -92,6 +113,7 @@ p {
   width: 18em;
   bottom: 0;
   left: 50%;
+  animation-iteration-count: 1;
 }
 
 #board:after {
