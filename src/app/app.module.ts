@@ -14,7 +14,6 @@ import { SpeciesComponent } from './species/species.component';
 import { StarshipsComponent } from './starships/starships.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { ModalContentComponent } from './modal-content/modal-content.component';
-import { HomeComponent } from './home/home.component';
 
 
 
@@ -29,7 +28,6 @@ import { HomeComponent } from './home/home.component';
     StarshipsComponent,
     VehiclesComponent,
     ModalContentComponent,
-    HomeComponent,
   ],
   imports: [
     BrowserModule,
