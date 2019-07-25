@@ -3,7 +3,7 @@
 
 This is the first file one should read when starting a new project. There are always details here that you may miss if you skip this part. 
 
-STEP 1) Allow the intro 6 seconds before you continue on to change the route from the navigation bar.
+STEP 1) Allow the intro 6 seconds before you continue on to change the route from the navigation menu. There are some features that have timers attached.
 
 STEP 2) Feel free to click on any and everything, especially the SPECIES, MOVIES and PLANETS to get more details from a pretty cool modal that has scrolling enabled. 
 
